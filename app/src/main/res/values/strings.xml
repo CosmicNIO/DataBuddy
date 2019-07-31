@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Data Buddy</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="data_type_summary">Select the types of data to display.</string>
+    <string name="bits_view_text">Bits:</string>
+    <string name="bytes_view_text">Bytes:</string>
+    <string name="kilobytes_view_text">Kilobytes:</string>
+    <string name="megabytes_view_text">Megabytes:</string>
+    <string name="gigabytes_view_text">Gigabytes:</string>
+    <string name="terabytes_view_text">Terabytes:</string>
+    <string name="petabytes_view_text">Petabytes:</string>
+    <string name="hint">Enter values...</string>
+</resources>

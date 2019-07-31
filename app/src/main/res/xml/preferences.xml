@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <MultiSelectListPreference
+        android:defaultValue="@array/data_list"
+        android:entries="@array/data_list"
+        android:entryValues="@array/data_list"
+        android:key="dataSelection"
+        android:summary="@string/data_type_summary"
+        android:title="Data types" />
+</PreferenceScreen>

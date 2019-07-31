@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data_list">
+        <item>Bits</item>
+        <item>Bytes</item>
+        <item>Kilobytes</item>
+        <item>Megabytes</item>
+        <item>Gigabytes</item>
+        <item>Terabytes</item>
+        <item>Petabytes</item>
+    </string-array>
+</resources>
