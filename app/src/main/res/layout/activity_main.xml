@@ -21,221 +21,239 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.hfad.databuddy.MainActivityFragment"
-        tools:showIn="@layout/activity_main">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/bit_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="16dp"
-            android:gravity="end"
-            android:text="@string/bits_view_text"
-            android:textSize="24sp"
-            android:tag="Bits"
-            android:labelFor="@+id/bit_text"
-            app:layout_constraintBottom_toBottomOf="@+id/bit_text"
-            app:layout_constraintEnd_toStartOf="@+id/bit_text"
-            app:layout_constraintStart_toStartOf="parent" />
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            tools:context="com.hfad.databuddy.MainActivityFragment"
+            tools:showIn="@layout/activity_main">
 
-        <TextView
-            android:id="@+id/byte_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="16dp"
-            android:gravity="end"
-            android:text="@string/bytes_view_text"
-            android:textSize="24sp"
-            android:tag="Bytes"
-            android:labelFor="@+id/byte_text"
-            app:layout_constraintBottom_toBottomOf="@+id/byte_text"
-            app:layout_constraintEnd_toStartOf="@+id/byte_text"
-            app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/bit_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="66dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:labelFor="@+id/bit_text"
+                android:tag="Bits"
+                android:text="@string/bits_view_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/kilo_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="16dp"
-            android:gravity="end"
-            android:text="@string/kilobytes_view_text"
-            android:textSize="24sp"
-            android:tag="Kilobytes"
-            android:labelFor="@+id/kilo_text"
-            app:layout_constraintBottom_toBottomOf="@+id/kilo_text"
-            app:layout_constraintEnd_toStartOf="@+id/kilo_text"
-            app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/byte_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:labelFor="@+id/byte_text"
+                android:tag="Bytes"
+                android:text="@string/bytes_view_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bit_text" />
 
-        <TextView
-            android:id="@+id/mega_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="16dp"
-            android:gravity="end"
-            android:text="@string/megabytes_view_text"
-            android:textSize="24sp"
-            android:tag="Megabytes"
-            android:labelFor="@+id/mega_text"
-            app:layout_constraintBottom_toBottomOf="@+id/mega_text"
-            app:layout_constraintEnd_toStartOf="@+id/mega_text"
-            app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/kilo_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:labelFor="@+id/kilo_text"
+                android:tag="Kilobytes"
+                android:text="@string/kilobytes_view_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/byte_text" />
 
-        <TextView
-            android:id="@+id/giga_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="16dp"
-            android:gravity="end"
-            android:text="@string/gigabytes_view_text"
-            android:textSize="24sp"
-            android:tag="Gigabytes"
-            android:labelFor="@+id/giga_text"
-            app:layout_constraintBottom_toBottomOf="@+id/giga_text"
-            app:layout_constraintEnd_toStartOf="@+id/giga_text"
-            app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/mega_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:labelFor="@+id/mega_text"
+                android:tag="Megabytes"
+                android:text="@string/megabytes_view_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kilo_text" />
 
-        <TextView
-            android:id="@+id/tera_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="16dp"
-            android:gravity="end"
-            android:text="@string/terabytes_view_text"
-            android:textSize="24sp"
-            android:tag="Terabytes"
-            android:labelFor="@+id/tera_text"
-            app:layout_constraintBottom_toBottomOf="@+id/tera_text"
-            app:layout_constraintEnd_toStartOf="@+id/tera_text"
-            app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/giga_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:labelFor="@+id/giga_text"
+                android:tag="Gigabytes"
+                android:text="@string/gigabytes_view_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mega_text" />
 
-        <TextView
-            android:id="@+id/peta_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="16dp"
-            android:gravity="end"
-            android:text="@string/petabytes_view_text"
-            android:textSize="24sp"
-            android:tag="Petabytes"
-            android:labelFor="@+id/peta_text"
-            app:layout_constraintBottom_toBottomOf="@+id/peta_text"
-            app:layout_constraintEnd_toStartOf="@+id/peta_text"
-            app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/tera_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:labelFor="@+id/tera_text"
+                android:tag="Terabytes"
+                android:text="@string/terabytes_view_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/giga_text" />
 
-        <EditText
-            android:id="@id/bit_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="65dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:tag="Bits"
-            android:hint="@string/hint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/peta_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:labelFor="@+id/peta_text"
+                android:tag="Petabytes"
+                android:text="@string/petabytes_view_text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tera_text" />
 
-        <EditText
-            android:id="@id/byte_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:tag="Bytes"
-            android:hint="@string/hint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bit_text" />
+            <EditText
+                android:id="@id/bit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="@string/hint"
+                android:inputType="numberDecimal"
+                android:tag="Bits"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bit_view" />
 
-        <EditText
-            android:id="@id/kilo_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:tag="Kilobytes"
-            android:hint="@string/hint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/byte_text" />
+            <EditText
+                android:id="@id/byte_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/hint"
+                android:inputType="numberDecimal"
+                android:tag="Bytes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/byte_view" />
 
-        <EditText
-            android:id="@id/mega_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:tag="Megabytes"
-            android:hint="@string/hint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/kilo_text" />
+            <EditText
+                android:id="@id/kilo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/hint"
+                android:inputType="numberDecimal"
+                android:tag="Kilobytes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kilo_view" />
 
-        <EditText
-            android:id="@id/giga_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:tag="Gigabytes"
-            android:hint="@string/hint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mega_text" />
+            <EditText
+                android:id="@id/mega_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/hint"
+                android:inputType="numberDecimal"
+                android:tag="Megabytes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mega_view" />
 
-        <EditText
-            android:id="@id/tera_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:tag="Terabytes"
-            android:hint="@string/hint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/giga_text" />
+            <EditText
+                android:id="@id/giga_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/hint"
+                android:inputType="numberDecimal"
+                android:tag="Gigabytes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/giga_view" />
 
-        <EditText
-            android:id="@id/peta_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:tag="Petabytes"
-            android:hint="@string/hint"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tera_text" />
+            <EditText
+                android:id="@id/tera_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/hint"
+                android:inputType="numberDecimal"
+                android:tag="Terabytes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tera_view" />
 
-    </android.support.constraint.ConstraintLayout>
+            <EditText
+                android:id="@id/peta_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="@string/hint"
+                android:inputType="numberDecimal"
+                android:tag="Petabytes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/peta_view" />
 
+        </android.support.constraint.ConstraintLayout>
 
-    <include layout="@layout/content_main" />
+    </ScrollView>
+
 
 </android.support.design.widget.CoordinatorLayout>
